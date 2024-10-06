@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Service Public</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Styles pour le menu surgissant */
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #f8f9fa;
+            padding: 10px;
+            list-style: none;
+            width: 200px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-item:hover ul {
+            display: block;
+        }
+
+        .nav-item ul li {
+            padding: 5px 0;
+        }
+
+        .nav-item ul li a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 5px;
+            display: block;
+        }
+
+        .nav-item ul li a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-light p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="images/logo_msp_Part.png" alt="Logo Mon Service Public" class="img-fluid" style="max-width: 200px;">
+            <div>
+                <input type="text" placeholder="Rechercher" class="form-control d-inline w-auto">
+                <button class="btn btn-secondary d-inline">OK</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation avec menus surgissants au survol -->
+    <nav class="bg-light py-2">
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Mon tableau de bord</a>
+                    <ul>
+                        <li><a href="#">Mes liaisons de comptes</a></li>
+                        <li><a href="#">Mon calendrier</a></li>
+                        <li><a href="#">Mon suivi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mes documents</a>
+                    <ul>
+                        <li><a href="#">Mon porte-documents</a></li>
+                        <li><a href="#">Mon bloc-notes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mon profil</a>
+                    <ul>
+                        <li><a href="#">Mes coordonnées</a></li>
+                        <li><a href="#">Mes contacts</a></li>
+                        <li><a href="#">Mes options</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catalogue des services</a>
+                    <ul>
+                        <li><a href="#">Les démarches</a></li>
+                        <li><a href="#">Les formulaires CERFA</a></li>
+                        <li><a href="#">Les organismes partenaires</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Mon tableau de bord</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Main content with grid -->
+    <main class="container mt-4">
+        <div class="row">
+            <article class="col-md-8">
+                <h2 class="text-primary">MON TABLEAU DE BORD</h2>
+                <p>Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau de bord ».</p>
+
+                <div class="row my-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/401_430_suivi.jpg" class="card-img-top" alt="Mes liaisons de comptes">
+                            <div class="card-body">
+                                <h5 class="card-title">Mes liaisons de comptes</h5>
+                                <p class="card-text">Accédez d'un clic à vos comptes administratifs sans ressaisir vos identifiants et mots de passe. Gérez vos liaisons de comptes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/402_429_Liaisons.JPG" class="card-img-top" alt="Mon calendrier">
+                            <div class="card-body">
+                                <h5 class="card-title">Mon calendrier</h5>
+                                <p class="card-text">Notez et visualisez toutes vos échéances administratives. Recevez des alertes par courriel pour vos rappels d'échéances.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/605_403_418_picto_agenda.gif" class="card-img-top" alt="Mon suivi">
+                            <div class="card-body">
+                                <h5 class="card-title">Mon suivi</h5>
+                                <p class="card-text">Suivez l'avancement de vos démarches en ligne. Consultez les messages envoyés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sidebar with tips -->
+            <aside class="col-md-4">
+                <h3>Les astuces</h3>
+                <p><a href="#">Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne</a></p>
+                <p><a href="#">Toutes les astuces</a></p>
+
+                <h3 class="text-danger">Les actualités</h3>
+                <ul>
+                    <li><a href="#">22/10/2012 Que pensez-vous de MSP ?</a></li>
+                    <li><a href="#">10/10/2012 Le Conseil général du Tarn déploie une nouvelle téléprocédure</a></li>
+                    <li><a href="#">30/07/2012 Une nouvelle démarche en ligne sur MSP</a></li>
+                    <li><a href="#">15/06/2012 Accédez à votre déclaration de revenus depuis MSP</a></li>
+                </ul>
+                <p><a href="#">Toutes les actualités</a></p>
+            </aside>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Assistance et contact</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Plan du site</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                    <li><a href="#" class="text-white">Aide</a></li>
+                    <li><a href="#" class="text-white">Questions fréquentes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Informations légales</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Mentions légales</a></li>
+                    <li><a href="#" class="text-white">Conditions générales d'utilisation</a></li>
+                    <li><a href="#" class="text-white">Répertoire des informations publiques</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Qualité de service</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Accessibilité</a></li>
+                    <li><a href="#" class="text-white">Sécurité</a></li>
+                    <li><a href="#" class="text-white">Engagement qualité</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Partenariat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Nos organismes partenaires</a></li>
+                    <li><a href="#" class="text-white">Devenir partenaire ?</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">© 2012 Mon Service Public. Tous droits réservés - Direction Générale de Modernisation de l'État</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

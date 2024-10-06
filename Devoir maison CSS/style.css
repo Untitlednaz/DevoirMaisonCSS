@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+/* Navigation Styles */
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item:hover ul {
+    display: block;
+}
+
+.nav-item ul li {
+    list-style: none;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+}
+
+/* Cards in Main Section */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Main and Aside alignment */
+.container {
+    max-width: 1100px;
+}
+
+main .col-md-8, aside .col-md-4 {
+    float: left;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
